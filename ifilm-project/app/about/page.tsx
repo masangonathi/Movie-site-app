@@ -20,8 +20,13 @@ export default function About() {
         </p>
         
         <p>
-            
+            In addition to our extensive movie database, we also offer a platform for movie lovers
+            to connect and share their thoughts on the latest releases. Our community section includes
+            a forum where you can discuss your favourite films with like-minded individuals and read 
+            reviews and ratings from other users. We also have a section dedicated to movie news keeping
+            you updated with the latest happenings in the wolrd of movies.
         </p>
+        
     </div>
   )
 }
