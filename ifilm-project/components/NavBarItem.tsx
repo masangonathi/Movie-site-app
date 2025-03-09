@@ -1,12 +1,12 @@
-"use client"
+'use client';
 
 import React from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 
-export default function NavBarItem ({ title, param }) {
+export default function NavBarItem ({ title, param } : {title:string; param:string}) {
     
-    const searchParas= useSearchParams();
+    const searchParams= useSearchParams();
     const genre = searchParams.get('genre');
     return (
     <div>

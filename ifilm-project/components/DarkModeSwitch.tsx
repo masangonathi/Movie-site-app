@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import  React, { useEffect, useState } from 'react'
 import {MdLightMode, MdDarkMode } from 'react-icons/md'
 import { useTheme } from 'next-themes'
