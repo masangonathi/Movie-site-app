@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Providers from "./Providers";
@@ -20,18 +20,12 @@ export const metadata: Metadata = {
   description: "This is a movie recommendation app",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: {children:string}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Providers>
-        < Header/>
+        < Header />
         <Navbar />
         {children}
         </Providers>
