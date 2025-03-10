@@ -3,11 +3,28 @@ import Link from 'next/link'
 import React from 'react'
 import { FiThumbsUp } from 'react-icons/fi'
 
-export default function Card({result}) {
+interface Movie {
+  id: string;
+  overview: string;
+  backdrop_path?: string;
+  poster_path?: string;
+  title?: string;
+  name?: string;
+  release_date?: string;
+  first_air_date?: string;
+  vote_count?: number;
+}
+
+interface CardProps {
+  result:Movie;
+}
+
+
+export default function Card({result}: CardProps) {
   return (
     <div className='group cursor-pointer sm:hover:shadow-slate-400 sm:shadow-md rounded-lg
     sm:border sm:border-slate-400 sm:m-2'>
-      <Link href={`/moive/${result.id}`}>
+      <Link href={`/movie/${result.id}`}>
           <Image 
           src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}
           width={500}
