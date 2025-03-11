@@ -3,6 +3,7 @@ import Card from './Card';
 
 interface Movie {
   id: string;
+  overview: string;
 }
 
 interface ResultsProps {

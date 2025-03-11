@@ -21,6 +21,7 @@ export default async function MoviePage({ params }: { params: Params }) {
                  height={300}
                  className='rounded-lg'
                  alt={movie.title || movie.name}
+                 style={{maxWidth: '100%', height: '100%'}}
                 />       
                 <div className="p-2">
                     <h2 className='text-lg mb-3 font-bold'>
