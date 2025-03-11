@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Providers from "./Providers";
 import Navbar from "@/components/Navbar";
 import React from "react";
+import SearchBar from "../components/SearchBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers>
         < Header />
         <Navbar />
+        <SearchBar />
         {children}
         </Providers>
       </body>
